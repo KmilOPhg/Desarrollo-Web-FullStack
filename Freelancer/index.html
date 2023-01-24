@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preload" href="CSS/style.css" as="style">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
 </head>
 <body>
     <header>
-        <h1>Camilo Hurtado Freelancer</h1>
+        <h1>Camilo Hurtado <span>Freelancer</span></h1>
     </header>
     
     <nav>
@@ -92,7 +95,40 @@
     <section>
         <h2>Contacto</h2>
 
-        
+        <form>
+            <fieldset>
+                <legend>Contactame</legend>
+
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre">
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Ingrese su teléfono">
+                </div>
+
+                <div>
+                    <label>Correo</label>
+                    <input type="email" placeholder="Ingrese su correo">
+                </div>
+
+                <div>
+                    <label>Correo</label>
+                    <input type="email" placeholder="Ingrese su correo">
+                </div>
+
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
     </section>
 
     <footer>

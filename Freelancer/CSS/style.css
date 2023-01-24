@@ -1,0 +1,18 @@
+/* Hack para reiniciar el tamaño del rem: 1rem = 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+/* Fin hack */
+
+h1 {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+h1 span { /* El primer selector es el padre y el segundo es el hijo (Solo seleccione los span hijos del h1) */
+    font-size: 2rem;
+}
