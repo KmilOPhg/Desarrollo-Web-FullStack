@@ -1,3 +1,11 @@
+:root {
+    --blanco: #FFFFFF;
+    --negro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+}
+
 /* Hack para reiniciar el tamaño del rem: 1rem = 10px */
 html {
     font-size: 62.5%;
@@ -5,14 +13,50 @@ html {
 
 body {
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
 }
 /* Fin hack */
 
-h1 {
+.titulo{
     text-align: center;
     font-size: 3.8rem;
+    font-weight: bold;
 }
 
-h1 span { /* El primer selector es el padre y el segundo es el hijo (Solo seleccione los span hijos del h1) */
+.titulo span { /* El primer selector es el padre y el segundo es el hijo (Solo seleccione los span hijos del h1) */
     font-size: 2rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--negro);
+    transition: calc(.1s);
+}
+
+@media (min-width: 480px) {
+    body {
+        background-color: blue;
+    }
 }

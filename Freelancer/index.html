@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diseñador Freelancer</title>
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="CSS/style.css" as="style">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
 </head>
 <body>
     <header>
-        <h1>Camilo Hurtado <span>Freelancer</span></h1>
+        <h1 class="titulo">Camilo Hurtado <span>Freelancer</span></h1>
     </header>
-    
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="nosotros.html">Sobre mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="nosotros.html">Sobre mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
     <section>
         <h2>Diseño y Desarrollo Web Freelancer</h2>
@@ -107,11 +111,6 @@
                 <div>
                     <label>Teléfono</label>
                     <input type="tel" placeholder="Ingrese su teléfono">
-                </div>
-
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Ingrese su correo">
                 </div>
 
                 <div>
