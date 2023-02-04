@@ -7,29 +7,64 @@
 }
 
 /* Hack para reiniciar el tamaño del rem: 1rem = 10px */
+/* apply a natural box layout model to all elements, but allowing components to change */
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Krub', sans-serif;
 }
 /* Fin hack */
 
-.titulo{
-    text-align: center;
+h1 {
     font-size: 3.8rem;
-    font-weight: bold;
 }
 
-.titulo span { /* El primer selector es el padre y el segundo es el hijo (Solo seleccione los span hijos del h1) */
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+ font-size: 1.8rem;
+}
+
+.titulo{
+    text-align: center;
+}
+
+ /* El primer selector es el padre y el segundo es el hijo (Solo seleccione los span hijos del h1) */
+.titulo span {
     font-size: 2rem;
 }
 
 .contenedor {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
 }
 
 .nav-bg {
@@ -38,10 +73,18 @@ body {
 
 .navegacion-principal {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a {
+    display: block;
+    text-align: center;
     padding: 1rem;
     color: var(--blanco);
     text-decoration: none;
@@ -55,8 +98,32 @@ body {
     transition: calc(.1s);
 }
 
-@media (min-width: 480px) {
-    body {
-        background-color: blue;
-    }
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0 0 0 / 65%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
 }
