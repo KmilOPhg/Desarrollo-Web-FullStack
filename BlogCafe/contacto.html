@@ -38,18 +38,19 @@
 
         <form class="formulario" action="#">
             <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Nombre" id="nombre" required>
+                <label for="nombre" class="campo__label">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Nombre" id="nombre" required>
             </div>
             <div class="campo">
-                <label for="email">E-mail</label>
-                <input type="email" placeholder="email" id="email" required>
+                <label for="email" class="campo__label">E-mail</label>
+                <input class="campo__field" type="email" placeholder="email" id="email" required>
             </div>
             <div class="campo">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                <label for="mensaje" class="campo__label">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
             </div>
 
+            <!-- Boton Submit -->
             <div class="campo">
                 <input type="submit" value="Enviar" class="boton boton--primario">
             </div>
