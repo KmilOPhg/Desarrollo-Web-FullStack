@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    font-family: 'Carrois Gothic SC', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    color: #cddcfa;
+    margin-bottom: 2rem;
+}
+
+.panel-control {
+    margin-bottom: 2rem;
+}
+
+.panel-control button {
+    background-color: #fff;
+    color: #182848;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.panel-control button:hover {
+    background-color: #e0e0e0;
+}
+
+.campo-batalla {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+.campo-batalla .tarjeta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.tarjeta p {
+    font-size: 1.5rem;
+}
+
+.vs {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.panel-armas {
+    margin-top: 2rem;
+}
+
+.panel-armas h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.panel-armas button {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.panel-armas button:hover {
+    background-color: #ffdb4d;
+}
+
+.mensaje-arma {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #ffff;
+    text-align: center;
+    margin-top: 1rem;
+    animation: aparecer 0.3s ease-in;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade in-out para el mensaje crítico */
+.fade {
+    animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Temblor para la tarjeta del objetivo */
+.temblor {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}

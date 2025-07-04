@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Turnos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Jueguito Culo Con JavaScript</h1>
+        <p class="subtitulo">Turnos por honor (y violencia)</p>
+    
+        <p id="estadoJuego" class="mensaje-arma"></p>
+        <p id="mensajeCritico" class="mensaje-arma fade-target"></p> <!-- Agrega clase objetivo de fade -->
+    
+        <div class="panel-control">
+            <button id="btnJugar">🎮 Jugar</button>
+            <button id="btnAtacar">⚔️ Atacar</button>
+        </div>
+    
+        <div class="campo-batalla">
+            <div class="tarjeta" id="tarjetaJugador"> <!-- ID para aplicar temblor si el jugador recibe critico     -->
+                <h2 id="nombreJugador">Jugador</h2>
+                <p>❤️ <span id="vidaJugador">500</span> HP</p>
+                <p id="armaJugador" class="mensaje-arma"></p>
+                <p id="mensajeCriticoJugador"></p>
+            </div>
+    
+            <div class="vs">VS</div>
+    
+            <div class="tarjeta enemigo" id="tarjetaEnemigo"> <!-- ID para aplicar temblor si el enemigo recibe critico-->
+                <h2 id="nombreEnemigo">Enemigo</h2>
+                <p>❤️ <span id="vidaEnemigo">500</span> HP</p>
+                <p id="armaEnemigoElegida" class="mensaje-arma"></p>
+                <p id="mensajeCriticoEnemigo"></p>
+            </div>
+        </div>
+    
+        <div class="panel-armas">
+            <h3>Elige tu arma</h3>
+            <button id="btnEspada">🗡️ Espada</button>
+            <button id="btnSalud">🛡️ Armadura</button>
+            <button id="btnRayo">⚡ Rayo</button>
+        </div>
+    </div>    
+
+    <script src="js/scriptJuego.js"></script>
+    <script src="js/practica.js"></script>
+</body>
+</html>
